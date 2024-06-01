@@ -1,0 +1,108 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    background: var(--color-1);
+    padding: 2rem 9%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    color: var(--blanco);
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: var(--color-2);
+}
+
+.navbar a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-2);
+    transition: width 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: var(--color-2); 
+    margin: 0 32px 0 16px;
+}
+
+.custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+    color: var(--blanco);
+    outline: none;
+  }
+
+  .custom-select-wrapper select:focus {
+    outline: none;
+}
+  
+  .custom-select-wrapper:hover select,
+  .custom-select-wrapper:hover .arrow {
+    background-color: var(--color-2);
+    color: var(--color-1);
+  }
+  
+  .custom-select-wrapper select {
+    padding: 3px 0px 3px 6px;
+    font-size: 16px;
+    border: 0.5px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+      
+  .custom-select-wrapper select option {
+    font-size: 14px;
+    color: black; /* Color del texto dentro del select */
+    background-color: #fff;
+  }
+  
+  .custom-select-wrapper select option:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .custom-select-wrapper select option:checked {
+    background-color: #e0e0e0;
+    font-weight: bold;
+  }
+  
+  #language {
+    color: var(--blanco);
+    background-color: transparent;
+  }
+  
+  #language:hover {
+    color: var(--color-1);
+    background-color: var(--color-2);
+  }
+
