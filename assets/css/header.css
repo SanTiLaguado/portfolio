@@ -6,12 +6,34 @@
     display: flex;
     justify-content: space-between;
     background: var(--color-1);
-    padding: 2rem 9%;
+    padding: 8px 10rem 8px 10em;
 }
 
-.logo{
+.profile-wrapper{
     display: flex;
+    flex-direction: row;
     align-items: center;
+}
+
+.profiletext p{
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 0 0 5px black;
+}
+.name{
+  font-size: 0.9rem;
+  color: var(--blanco);
+}
+.occ {
+  font-size: 0.7rem;
+  color: var(--color-2);
+}
+
+.profile-wrapper img{
+  height: 50px;
+  width: 45px;
+  border-radius: 50px;
+  margin-right: 1em;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.7));
 }
 
 .navbar{
@@ -21,7 +43,7 @@
 
 .navbar a {
     margin: 0 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--blanco);
     position: relative;
     display: inline-block;
