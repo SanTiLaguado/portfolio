@@ -1,12 +1,11 @@
 .header {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    z-index: 10;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     background: var(--color-1);
-    padding: 8px 10rem 8px 10em;
+    padding: 8px 15rem 8px 15em;
 }
 
 .profile-wrapper{
